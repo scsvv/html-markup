@@ -87,7 +87,7 @@ main.main {
 }
 section.movie {
   width: 896px;
-  min-height: 522px;
+  min-height: 50%;
   padding: 90px 44px;
   border-radius: 24px;
   background-color: #F2F2F2;
@@ -160,7 +160,20 @@ p.movie__day {
 div.movie__seanse_list {
   display: flex;
 }
+.circle-glasses {
+  width: 26px;
+  height: 26px;
+  background-color: #52badb;
+  background-image: url('./img/glasses.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 80%;
+}
 div.movie__time {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,4 +224,16 @@ div.movie__time > h5.time__case {
 .movie__scroll-btnspace > div.right.active {
   transform: rotateY(180deg);
   background-image: url('./img/twotone-closed_caption.png');
+}
+.footer {
+  width: calc(100vw - 44px);
+  margin: 0 auto;
+  min-height: 88px;
+  background-color: #F2F2F2;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
