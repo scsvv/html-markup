@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -257,7 +257,6 @@ div.movie__time > h5.time__case {
   height: 24px;
   margin-right: 8px;
 }
-
 .copyrigths {
   color: #7f7f8a;
   font-size: 14px;
