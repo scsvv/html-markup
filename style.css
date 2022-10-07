@@ -253,4 +253,29 @@ div.movie__time > h5.time__case {
 .copyrigths > div > p {
   margin-right: 16px;
 }
+.footer__links {
+  display: flex;
+  align-items: center;
+}
+.footer__return-ticket-rule {
+  color: #ce58e7;
+  font-size: 17px;
+  margin-right: 58px;
+}
+.footer__social-media {
+  display: flex;
+}
+
+.footer__social-media > div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-media > div:not(:last-child) {
+  margin-right: 24px;
+}
 
