@@ -213,14 +213,12 @@ div.movie__time > h5.time__case {
   width: 40px;
   height: 40px;
 }
-
 .movie__scroll-btnspace > div.left {
   background-image: url('./img/baseline-expand_more.png');
 }
 .movie__scroll-btnspace > div.left.active {
   background-image: url('./img/twotone-closed_caption.png');
 }
-
 .movie__scroll-btnspace > div.right.active {
   transform: rotateY(180deg);
   background-image: url('./img/twotone-closed_caption.png');
@@ -237,6 +235,29 @@ div.movie__time > h5.time__case {
   align-items: center;
   padding: 0 24px;
 }
+.dowload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 48px;
+  border-radius: 26px;
+  border: none;
+  margin-right: 32px;
+  font-size: 17px;
+  color: #fff;
+  position: relative;
+  font-weight: 600;
+  background: rgb(206,88,231);
+  background: linear-gradient(93deg, rgba(206,88,231,1) 0%, rgba(193,98,230,1) 41%, rgba(82,186,219,0.9780112728685224) 77%, rgba(184,106,229,1) 100%); 
+}
+.dowload::before {
+  content: url('./img/baseline.png');
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
 .copyrigths {
   color: #7f7f8a;
   font-size: 14px;
@@ -265,16 +286,14 @@ div.movie__time > h5.time__case {
 .footer__social-media {
   display: flex;
 }
-
 .footer__social-media > div {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .footer__social-media > div:not(:last-child) {
   margin-right: 24px;
 }
