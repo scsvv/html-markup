@@ -23,7 +23,7 @@ button {
 .header div {
   display: flex;
   align-items: center;
-
+  color: #F2F2F2
 }
 button.header__menu {
   width: 40px;
@@ -78,7 +78,6 @@ button.header__place-openlist {
 .header__filter div > p > span {
   color: #ce58e7;
 }
-
 main.main {
   padding: 40px 21px;
   display: flex;
@@ -95,7 +94,6 @@ section.movie {
   padding-left: 340px;
   margin-bottom: 40px;
 }
-
 section.movie:nth-child(2n - 1) {
   margin-right: 40px;
 }
@@ -159,6 +157,7 @@ p.movie__day {
 }
 div.movie__seanse_list {
   display: flex;
+  flex-wrap: wrap;
 }
 .circle-glasses {
   width: 26px;
@@ -172,6 +171,9 @@ div.movie__seanse_list {
   top: 0%;
   left: 80%;
 }
+div.movie__time:not(:nth-child(4n)) {
+  margin-right: 16px;
+}
 div.movie__time {
   position: relative;
   display: flex;
@@ -183,7 +185,7 @@ div.movie__time {
   background-color: #fff;
   box-shadow: 0px 2px 12px #00000014;
   border-radius: 24px;
-  margin-right: 16px;
+
   margin-bottom: 46px;
 }
 div.movie__time > h5.time__case {
@@ -296,4 +298,3 @@ div.movie__time > h5.time__case {
 .footer__social-media > div:not(:last-child) {
   margin-right: 24px;
 }
-
