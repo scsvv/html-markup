@@ -1,29 +1,9 @@
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
 button {
   cursor: pointer;
-}
-.header {
-  font-weight: 600;
-  font-size: 17px;
-  color: black;
-  min-height: 104px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 34px;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  box-shadow: 0px 2px 12px #00000014;
 }
 .header div {
   display: flex;
   align-items: center;
-  color: #F2F2F2
 }
 button.header__menu {
   width: 40px;
