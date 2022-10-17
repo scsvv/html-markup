@@ -83,6 +83,9 @@ main.main {
     justify-content: start;
     flex-wrap: wrap;
 }
+.menu__item {
+  position: relative;
+}
 section.movie {
     width: 896px;
     min-height: 50%;
@@ -296,4 +299,28 @@ div.movie__time > h5.time__case {
 }
 .footer__social-media > div:not(:last-child) {
     margin-right: 24px;
+}
+.menu__item > div.popup_menu {
+  margin-top: 10px;
+  display: none;
+  padding: 16px;
+  width: 261px;
+  min-height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  border-radius: 16px;
+  box-shadow: -10px 0px 40px #00000040;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.menu__item > div.popup_menu.popup_menu_on {
+  display: flex;
+}
+.popup_menu p:hover {
+  color: #ce58e7;
+}
+.popup_menu p:not(:last-child){
+  margin-bottom: 8px;
 }
