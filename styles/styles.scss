@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header {
   font-weight: 600;
   font-size: 17px;
@@ -16,14 +20,13 @@
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
   box-shadow: 0px 2px 12px #00000014;
-}
-button {
-    cursor: pointer;
-}
-.header div {
+  
+  div {
     display: flex;
     align-items: center;
+    }
 }
+
 button.header__menu {
     width: 40px;
     height: 40px;
