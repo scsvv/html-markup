@@ -318,9 +318,15 @@ div.movie__time > h5.time__case {
 .menu__item > div.popup_menu.popup_menu_on {
   display: flex;
 }
-.popup_menu p:hover {
-  color: #ce58e7;
-}
+
 .popup_menu p:not(:last-child){
   margin-bottom: 8px;
+}
+
+.popup_menu {
+    p {
+        &:hover {
+            color: #ce58e7;  
+        }
+    }
 }
