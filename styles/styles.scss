@@ -124,6 +124,10 @@ section.movie {
     padding-left: 340px;
     margin-bottom: 40px;
 }
+section.movie:last-child {
+    display: flex;
+}
+
 .movie__poster-img {
     width: 320px;
     object-fit: contain;
@@ -347,21 +351,36 @@ div.movie__time {
     .movie__poster-img {
         width: 260px;
     }
-
     section.movie {
         min-width: 780px;
         min-height: 50%;
         padding: 40px 44px;
-        border-radius: 24px;
-        background-color: #F2F2F2;
-        position: relative;
         padding-left: 270px;
         margin-bottom: 40px;
     }
-
     div.movie__time {
         width: 106px;
         height: 106px;
-        
+    }
+}
+
+@media (max-width: 1640px) {
+    main.main {
+        padding: 40px 21px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .movie__poster-img {
+        width: 320px;
+    }
+    section.movie {
+        min-width: 896px;
+        padding: 90px 44px;
+        padding-left: 340px;
+    }
+    div.movie__time {
+        width: 116px;
+        height: 116px;
     }
 }
