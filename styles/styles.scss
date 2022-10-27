@@ -40,34 +40,69 @@ button.header__place-openlist {
     background-repeat: no-repeat;
     background-position: center;
 }
-.header__filter > div:not(:last-child) {
+.header__filter {
+    & div:not(:last-child) {
     margin-right: 24px;
-}
-.header__filter > div:last-child {
-    margin-left: 40px;
-}
-.header__filter div.login__img {
-    width: 40px;
-    height: 40px;
-    background-position: center;
-    background-image: url('./img/profile-40.png');
-    margin-left: 8px;
-}
-.header__filter .icon {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background-color: #F2F2F2;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 12px;
-}
-.header__filter div > p > span {
-    color: $primary;
+    }
+    & > div:last-child {
+        margin-left: 40px;
+    }
+
+    & div.login__img {
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-image: url('./img/profile-40.png');
+        margin-left: 8px;
+    }
+
+    & .icon {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background-color: #F2F2F2;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 12px;
+    }
+
+    & .header__filter div > p > span {
+        color: $primary;
+    }
+
 }
 .menu__item {
     position: relative;
+
+    & > div.popup_menu {
+        margin-top: 10px;
+        display: none;
+        padding: 16px;
+        width: 261px;
+        min-height: 100px;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        border-radius: 16px;
+        box-shadow: -10px 0px 40px #00000040;
+        flex-direction: column;
+        z-index: 100;
+      
+        &.popup_menu_on {
+          display: flex;
+        }
+      
+        & p:not(:last-child){
+          margin-bottom: 8px;
+        }
+      
+        p {
+          &:hover {
+              color: $primary;  
+          }
+      }
+    }
 
     &.open_dayslist{
         cursor: pointer;
@@ -80,7 +115,7 @@ main.main {
     flex-wrap: wrap;
 }
 section.movie {
-    width: 896px;
+    min-width: 896px;
     min-height: 50%;
     padding: 90px 44px;
     border-radius: 24px;
@@ -89,10 +124,16 @@ section.movie {
     padding-left: 340px;
     margin-bottom: 40px;
 }
+.movie__poster-img {
+    width: 320px;
+    object-fit: contain;
+}
 .movie__poster {
     position: absolute;
     left: -10px;
     top: 25px;
+    object-fit: contain;
+
 
     &:hover > .movie__poster-content {
         opacity: 100%;
@@ -108,7 +149,7 @@ section.movie {
     padding: 30px;
     align-items: flex-end;
     justify-content: space-between;
-    color: #fff;
+    color: $white;
     font-size: 13px;
     font-weight: bold;
     text-align: center;
@@ -174,7 +215,7 @@ div.movie__time {
     align-items: center;
     width: 116px;
     height: 116px;
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0px 2px 12px #00000014;
     border-radius: 24px;
     margin-bottom: 46px;
@@ -205,7 +246,7 @@ div.movie__time {
 }
 .movie__scroll-btnspace > div {
     display: inline-block;
-    background-color: #fff;
+    background-color: $white;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -246,7 +287,7 @@ div.movie__time {
     border: none;
     margin-right: 32px;
     font-size: 17px;
-    color: #fff;
+    color: $white;
     position: relative;
     font-weight: 600;
     background: rgb(206,88,231);
@@ -292,7 +333,7 @@ div.movie__time {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $white;
         background-repeat: no-repeat;
         background-position: center;
 
@@ -301,31 +342,26 @@ div.movie__time {
         }
     }
 }
-.menu__item > div.popup_menu {
-  margin-top: 10px;
-  display: none;
-  padding: 16px;
-  width: 261px;
-  min-height: 100px;
-  background-color: white;
-  position: absolute;
-  top: 100%;
-  border-radius: 16px;
-  box-shadow: -10px 0px 40px #00000040;
-  flex-direction: column;
-  z-index: 100;
 
-  &.popup_menu_on {
-    display: flex;
-  }
-
-  & p:not(:last-child){
-    margin-bottom: 8px;
-  }
-
-  p {
-    &:hover {
-        color: $primary;  
+@media (max-width: 1919px) {
+    .movie__poster-img {
+        width: 260px;
     }
-}
+
+    section.movie {
+        min-width: 780px;
+        min-height: 50%;
+        padding: 40px 44px;
+        border-radius: 24px;
+        background-color: #F2F2F2;
+        position: relative;
+        padding-left: 270px;
+        margin-bottom: 40px;
+    }
+
+    div.movie__time {
+        width: 106px;
+        height: 106px;
+        
+    }
 }
