@@ -110,9 +110,9 @@ button.header__place-openlist {
   }
 main.main {
     padding: 40px 21px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
 }
 section.movie {
     min-width: 896px;
